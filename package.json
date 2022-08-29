@@ -1,6 +1,6 @@
 {
   "name": "thrift-format-vscode",
-  "displayName": "thrift-format-vscode",
+  "displayName": "Thrift Formatters",
   "version": "0.0.0",
   "private": true,
   "publisher": "dup4",
@@ -18,7 +18,7 @@
     "url": "git+https://github.com/Dup4/thrift-format-vscode.git"
   },
   "categories": [
-    "Other"
+    "Formatters"
   ],
   "main": "./dist/index.js",
   "icon": "res/logo.png",
