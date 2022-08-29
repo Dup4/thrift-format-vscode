@@ -1,0 +1,68 @@
+{
+  "name": "thrift-format-vscode",
+  "displayName": "thrift-format-vscode",
+  "version": "0.0.0",
+  "private": true,
+  "publisher": "dup4",
+  "packageManager": "pnpm@7.9.5",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/Dup4/thrift-format-vscode#readme",
+  "bugs": {
+    "url": "https://github.com/Dup4/thrift-format-vscode/issues"
+  },
+  "license": "MIT",
+  "author": "Dup4 <lyuzhi.pan@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dup4/thrift-format-vscode.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/index.js",
+  "icon": "res/logo.png",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --external vscode",
+    "dev": "nr build --watch",
+    "test": "vitest",
+    "lint": "run-p lint:*",
+    "lint:build": "tsc --noEmit",
+    "lint:eslint": "eslint .",
+    "lint:style": "prettier --check src/*.ts src/**/*.ts",
+    "format": "run-p format:*",
+    "format:eslint": "eslint --fix .",
+    "format:style": "prettier --write src/*.ts src/**/*.ts",
+    "vscode:prepublish": "nr build",
+    "publish": "vsce publish --no-dependencies",
+    "pack": "vsce package --no-dependencies",
+    "release": "bumpp && nr publish"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.18.13",
+    "@types/node": "^17.0.45",
+    "@types/vscode": "^1.70.0",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "bumpp": "^7.2.0",
+    "eslint": "^8.23.0",
+    "esmo": "^0.14.1",
+    "npm-run-all": "^4.1.5",
+    "pnpm": "^7.9.5",
+    "prettier": "^2.7.1",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.2",
+    "vite": "^2.9.15",
+    "vitest": "^0.7.13",
+    "vsce": "^2.10.2"
+  }
+}
