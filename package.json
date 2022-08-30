@@ -45,7 +45,7 @@
     "vscode:prepublish": "npm run build",
     "publish": "vsce publish --no-dependencies",
     "pack": "vsce package --no-dependencies",
-    "release": "bumpp --commit --push --tag && && nr pack && nr publish"
+    "release": "bumpp --commit --push --tag && nr pack && nr publish"
   },
   "devDependencies": {
     "@antfu/ni": "github:antfu/ni",
