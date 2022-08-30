@@ -13,3 +13,5 @@ node_modules
 temp
 
 __snapshots__
+
+*.vsix
