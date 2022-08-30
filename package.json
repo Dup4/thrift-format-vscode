@@ -45,7 +45,7 @@
     "vscode:prepublish": "nr build",
     "publish": "vsce publish --no-dependencies",
     "pack": "vsce package --no-dependencies",
-    "release": "bumpp --commit --push --tag && npm publish"
+    "release": "bumpp --commit --push --tag && npm run publish"
   },
   "devDependencies": {
     "@babel/types": "^7.18.13",
