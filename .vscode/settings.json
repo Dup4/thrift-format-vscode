@@ -8,6 +8,7 @@
     "esmo",
     "esno",
     "pnpm",
+    "thirft",
     "tsup",
     "typecheck",
     "vite",

@@ -1,6 +1,6 @@
 {
-  "name": "thrift-format-vscode",
-  "displayName": "Thrift Formatters",
+  "name": "thrift-formatter",
+  "displayName": "Thrift Formatter",
   "version": "0.0.0",
   "private": true,
   "publisher": "dup4",
