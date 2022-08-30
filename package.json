@@ -42,12 +42,13 @@
     "format": "run-p format:*",
     "format:eslint": "eslint --fix .",
     "format:style": "prettier --write src/*.ts src/**/*.ts",
-    "vscode:prepublish": "nr build",
+    "vscode:prepublish": "npm run build",
     "publish": "vsce publish --no-dependencies",
     "pack": "vsce package --no-dependencies",
-    "release": "bumpp --commit --push --tag && npm run publish"
+    "release": "bumpp --commit --push --tag && && nr pack && nr publish"
   },
   "devDependencies": {
+    "@antfu/ni": "github:antfu/ni",
     "@babel/types": "^7.18.13",
     "@types/node": "^17.0.45",
     "@types/vscode": "^1.70.0",
