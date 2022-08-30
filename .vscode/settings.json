@@ -12,7 +12,8 @@
     "tsup",
     "typecheck",
     "vite",
-    "vitest"
+    "vitest",
+    "vsix"
   ],
   "typescript.tsdk": "node_modules/typescript/lib",
   "[typescript]": {
