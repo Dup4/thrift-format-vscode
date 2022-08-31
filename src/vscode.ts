@@ -1,7 +1,8 @@
 import * as vscode from "vscode";
 
+import { formatThrift } from "thrift-format-ts";
+
 import { getOptions } from "./utility";
-import { formatThrift } from "./format";
 
 export function activate(context: vscode.ExtensionContext) {
   console.log(

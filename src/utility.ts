@@ -1,4 +1,4 @@
-import { IOptions } from "./types";
+import { IOptions } from "thrift-format-ts";
 import * as vscode from "vscode";
 
 export function getOptions(): IOptions {
