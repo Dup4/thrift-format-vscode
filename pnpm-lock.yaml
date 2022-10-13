@@ -7,7 +7,7 @@ importers:
       '@antfu/ni': ^0.17.2
       '@babel/types': ^7.19.4
       '@types/node': ^17.0.45
-      '@types/vscode': ^1.72.0
+      '@types/vscode': 1.70.0
       '@typescript-eslint/eslint-plugin': ^5.40.0
       '@typescript-eslint/parser': ^5.40.0
       bumpp: ^7.2.0
@@ -27,7 +27,7 @@ importers:
       '@antfu/ni': 0.17.2
       '@babel/types': 7.19.4
       '@types/node': 17.0.45
-      '@types/vscode': 1.72.0
+      '@types/vscode': 1.70.0
       '@typescript-eslint/eslint-plugin': 5.40.0_25sstg4uu2sk4pm7xcyzuov7xq
       '@typescript-eslint/parser': 5.40.0_z4bbprzjrhnsfa24uvmcbu7f5q
       bumpp: 7.2.0
@@ -183,8 +183,8 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: true
 
-  /@types/vscode/1.72.0:
-    resolution: {integrity: sha512-WvHluhUo+lQvE3I4wUagRpnkHuysB4qSyOQUyIAS9n9PYMJjepzTUD8Jyks0YeXoPD0UGctjqp2u84/b3v6Ydw==}
+  /@types/vscode/1.70.0:
+    resolution: {integrity: sha512-3/9Fz0F2eBgwciazc94Ien+9u1elnjFg9YAhvAb3qDy/WeFWD9VrOPU7CIytryOVUdbxus8uzL4VZYONA0gDtA==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.40.0_25sstg4uu2sk4pm7xcyzuov7xq:
