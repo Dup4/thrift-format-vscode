@@ -17,7 +17,7 @@ importers:
       pnpm: ^7.13.4
       prettier: ^2.7.1
       rimraf: ^3.0.2
-      thrift-format-ts: ^0.0.0
+      thrift-format-ts: ^0.0.3
       tsup: ^6.2.3
       typescript: ^4.8.4
       vite: ^2.9.15
@@ -37,7 +37,7 @@ importers:
       pnpm: 7.13.4
       prettier: 2.7.1
       rimraf: 3.0.2
-      thrift-format-ts: 0.0.0
+      thrift-format-ts: 0.0.3
       tsup: 6.2.3_typescript@4.8.4
       typescript: 4.8.4
       vite: 2.9.15
@@ -354,6 +354,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       color-convert: 2.0.1
+    dev: true
+
+  /antlr4ts/0.5.0-alpha.4:
+    resolution: {integrity: sha512-WPQDt1B74OfPv/IMS2ekXAKkTZIHl88uMetg6q3OTqgFxZ/dxDXI0EWLyZid/1Pe6hTftyg5N7gel5wNAGxXyQ==}
     dev: true
 
   /any-promise/1.3.0:
@@ -2726,8 +2730,16 @@ packages:
       any-promise: 1.3.0
     dev: true
 
-  /thrift-format-ts/0.0.0:
-    resolution: {integrity: sha512-jVAPWQwsc8ULXqUUrRQnhA4XrgtQaasPS6Gi1RUxsdhJZ62oovGPYXxMQ5thyRsj3KcJJFqYT+L9dyxsezhxfQ==}
+  /thrift-format-ts/0.0.3:
+    resolution: {integrity: sha512-goG9UEkzThgcgJgZ3H0MZk37pi9TIhlSYGqMOhzO7808mpAJo1i0ajoyIlb9dQtlS/XhjIfsTnSSk0Pe8fIoRg==}
+    dependencies:
+      thrift-parser-typescript: 0.0.5
+    dev: true
+
+  /thrift-parser-typescript/0.0.5:
+    resolution: {integrity: sha512-C4X6OCMDkqPK4daSHbJmRXXsMfHbfZKGFp8gV1ETgGlB3eAAuRcfyq3YojOCIuYztQMyT4D8QStzu1E90VN3TQ==}
+    dependencies:
+      antlr4ts: 0.5.0-alpha.4
     dev: true
 
   /tinypool/0.1.3:
