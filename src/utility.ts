@@ -5,7 +5,11 @@ export function getOptions(): IOptions {
   const vsConfig = vscode.workspace.getConfiguration("thirftFormatter");
   const indent = vsConfig.get<number>("indent");
 
-  return {
-    indent,
-  };
+  const options: IOptions = {};
+
+  if (indent) {
+    options.indent = indent;
+  }
+
+  return options;
 }
