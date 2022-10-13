@@ -4,9 +4,12 @@ import { formatThrift } from "thrift-format-ts";
 
 import { getOptions } from "./utility";
 
+const NAME = "Thrift Formatter";
+const outputChannel = vscode.window.createOutputChannel(NAME);
+
 export function activate(context: vscode.ExtensionContext) {
-  console.log(
-    'Congratulations, your extension "thirft-formatter" is now active in the web extension host.',
+  outputChannel.appendLine(
+    "Congratulations, your extension thirft-formatter is now active in the web extension host.",
   );
 
   // register formatThriftFile command
@@ -22,7 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
       const { document } = vscode.window.activeTextEditor;
       const content = document.getText();
       if (content === "") {
-        console.log("No content to format.");
+        outputChannel.appendLine("No content to format.");
         return;
       }
 
@@ -36,7 +39,7 @@ export function activate(context: vscode.ExtensionContext) {
           );
         });
 
-        console.log("Thrift file has been formatted,");
+        outputChannel.appendLine("Thrift file has been formatted.");
       } catch (e) {
         console.error(e);
       }
@@ -52,7 +55,7 @@ export function activate(context: vscode.ExtensionContext) {
 
       const content = document.getText();
       if (content === "") {
-        console.log("No content to format.");
+        outputChannel.appendLine("No content to format.");
         return [];
       }
 
@@ -82,5 +85,5 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 export function deactivate() {
-  console.log('your extension "thirft-formatter" is now DeActive');
+  outputChannel.appendLine("your extension thirft-formatter is now DeActive");
 }
