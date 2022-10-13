@@ -1,7 +1,15 @@
 import { describe, expect, it } from "vitest";
 
+import { formatThrift } from "thrift-format-ts";
+
 describe("should", () => {
-  it("exported", () => {
-    expect(1).toEqual(1);
+  it("format", () => {
+    const content = `include "a.thrift"`;
+    const fmtContent = formatThrift(content);
+
+    expect(fmtContent).toMatchInlineSnapshot(`
+      "include \\"a.thrift\\"
+      "
+    `);
   });
 });

@@ -6,7 +6,7 @@ import { getOptions } from "./utility";
 
 export function activate(context: vscode.ExtensionContext) {
   console.log(
-    'Congratulations, your extension "thirft-formatter" is now active in the web extension host!',
+    'Congratulations, your extension "thirft-formatter" is now active in the web extension host.',
   );
 
   // register formatThriftFile command
@@ -22,13 +22,13 @@ export function activate(context: vscode.ExtensionContext) {
       const { document } = vscode.window.activeTextEditor;
       const content = document.getText();
       if (content === "") {
-        vscode.window.showInformationMessage("No content to format.");
+        console.log("No content to format.");
         return;
       }
 
-      const [fmtContent, needUpdate] = formatThrift(content, options);
+      try {
+        const fmtContent = formatThrift(content, options);
 
-      if (needUpdate) {
         vscode.window.activeTextEditor.edit((editBuilder) => {
           editBuilder.replace(
             new vscode.Range(0, 0, document.lineCount, 0),
@@ -36,7 +36,9 @@ export function activate(context: vscode.ExtensionContext) {
           );
         });
 
-        vscode.window.showInformationMessage("Thrift file has been formatted");
+        console.log("Thrift file has been formatted,");
+      } catch (e) {
+        console.error(e);
       }
     },
   );
@@ -50,22 +52,29 @@ export function activate(context: vscode.ExtensionContext) {
 
       const content = document.getText();
       if (content === "") {
-        vscode.window.showInformationMessage("No content to format.");
+        console.log("No content to format.");
         return [];
       }
 
-      const [fmtContent, needUpdate] = formatThrift(content, options);
+      try {
+        const fmtContent = formatThrift(content, options);
 
-      if (needUpdate) {
         return [
           vscode.TextEdit.replace(
             new vscode.Range(0, 0, document.lineCount, 0),
             fmtContent,
           ),
         ];
+      } catch (e) {
+        console.error(e);
       }
 
-      return [];
+      return [
+        vscode.TextEdit.replace(
+          new vscode.Range(0, 0, document.lineCount, 0),
+          content,
+        ),
+      ];
     },
   });
 
