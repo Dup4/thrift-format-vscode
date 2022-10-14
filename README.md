@@ -11,10 +11,16 @@
 [![Lint CI][gh-ci-lint-badge]][gh-ci-lint]
 [![GitHub release][gh-release-badge]][gh-release]
 
+## Notice
+
+* Not supported `/* */` Comments.
+* Best used in conjunction with [Thrift Syntax Support][thrift-syntax-support].
+
 ## License
 
 [MIT](./LICENSE) License © 2022 [Dup4][dup4]
 
+[thrift-syntax-support]: https://marketplace.visualstudio.com/items?itemName=mrkou47.thrift-syntax-support
 [dup4]: https://github.com/Dup4
 [vscode]: https://marketplace.visualstudio.com/items?itemName=dup4.thrift-formatter
 [gh]: https://github.com/Dup4/thrift-format-vscode
