@@ -17,9 +17,6 @@
     "type": "git",
     "url": "git+https://github.com/Dup4/thrift-format-vscode.git"
   },
-  "categories": [
-    "Formatters"
-  ],
   "main": "./dist/index.js",
   "icon": "res/logo.png",
   "files": [
@@ -29,8 +26,25 @@
     "vscode": "^1.70.0"
   },
   "activationEvents": [
-    "onStartupFinished"
+    "onLanguage:thrift"
   ],
+  "categories": [
+    "Formatters"
+  ],
+  "contributes": {
+    "configuration": {
+      "title": "Thrift Formatter"
+    },
+    "languages": [
+      {
+        "id": "thrift",
+        "extensions": [
+          ".thrift"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "nr build --watch",
