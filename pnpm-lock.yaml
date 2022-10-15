@@ -17,7 +17,7 @@ importers:
       pnpm: ^7.13.4
       prettier: ^2.7.1
       rimraf: ^3.0.2
-      thrift-format-ts: ^0.0.5
+      thrift-format-ts: ^0.0.6
       tsup: ^6.2.3
       typescript: ^4.8.4
       vite: ^2.9.15
@@ -37,7 +37,7 @@ importers:
       pnpm: 7.13.4
       prettier: 2.7.1
       rimraf: 3.0.2
-      thrift-format-ts: 0.0.5
+      thrift-format-ts: 0.0.6
       tsup: 6.2.3_typescript@4.8.4
       typescript: 4.8.4
       vite: 2.9.15
@@ -2730,8 +2730,8 @@ packages:
       any-promise: 1.3.0
     dev: true
 
-  /thrift-format-ts/0.0.5:
-    resolution: {integrity: sha512-uACT6h5U8GnAc0DMzS7qK1ReprKmZsqEbdtdxkngf/yzRgcIIVHfti9BuHWmy0xZuRlaBWrIrdPUMx2rMsVHTg==}
+  /thrift-format-ts/0.0.6:
+    resolution: {integrity: sha512-v8bCswu6DWoKtqRpKWM+mT3QgEiNoU/SqWZDRa+dCFhZ7E5jlQ/X5qyt/rFgb9EcT/Bzy0l3PkM9AAlLOnAHwA==}
     dependencies:
       thrift-parser-typescript: 0.0.5
     dev: true
