@@ -3,7 +3,6 @@
 [![Visual Studio Marketplace Version][vscode-v]][vscode]
 [![Visual Studio Marketplace Downloads][vscode-d]][vscode]
 [![Visual Studio Marketplace Installs][vscode-i]][vscode]
-[![Marketplace Trending Monthly][vscode-t]][vscode]
 [![GitHub last commit][last-commit-badge]][gh]
 [![GitHub issues][gh-issues-badge]][gh-issues]
 [![GitHub stars][gh-stars-badge]][gh]
@@ -28,7 +27,6 @@
 [vscode-v]: https://img.shields.io/visual-studio-marketplace/v/dup4.thrift-formatter.svg?color=blue&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code
 [vscode-d]: https://img.shields.io/visual-studio-marketplace/d/dup4.thrift-formatter.svg?color=4bdbe3
 [vscode-i]: https://img.shields.io/visual-studio-marketplace/i/dup4.thrift-formatter.svg?color=63ba83
-[vscode-t]: https://vsmarketplacebadge.apphb.com/trending-monthly/dup4.thrift-formatter.svg?color=a1b858
 [last-commit-badge]: https://img.shields.io/github/last-commit/Dup4/thrift-format-vscode.svg?color=c977be
 [gh-issues-badge]: https://img.shields.io/github/issues/Dup4/thrift-format-vscode.svg?color=a38eed
 [gh-stars-badge]: https://img.shields.io/github/stars/Dup4/thrift-format-vscode?style=social
