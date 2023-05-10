@@ -25,8 +25,11 @@
     "dist"
   ],
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.70.0"
   },
+  "activationEvents": [
+    "onLanguage:thrift"
+  ],
   "categories": [
     "Formatters"
   ],
