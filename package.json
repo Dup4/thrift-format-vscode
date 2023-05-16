@@ -18,9 +18,7 @@
     "url": "git+https://github.com/Dup4/thrift-format-vscode.git"
   },
   "main": "./dist/index.js",
-  "icons": {
-    "default": "res/logo.png"
-  },
+  "icon": "res/logo.png",
   "files": [
     "dist"
   ],
